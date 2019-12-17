@@ -62,7 +62,7 @@
         	}
 		}
 		else {
-            UIWindow *alertWindow = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+			UIWindow *alertWindow = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
             alertWindow.rootViewController = [[UIViewController alloc] init];
             alertWindow.windowLevel = UIWindowLevelAlert + 1;
 
@@ -87,7 +87,7 @@
 
             [alert showSuccess:@"Notice" subTitle:@"Installed From Unofficial Repo \n Install Only From The Offical Repo" closeButtonTitle:nil duration:0.0f];
 
-            [alertWindow makeKeyAndVisible];
+			[alertWindow makeKeyAndVisible];
             [alertWindow.rootViewController presentViewController:alert animated:YES completion:nil];
 		}
     }
