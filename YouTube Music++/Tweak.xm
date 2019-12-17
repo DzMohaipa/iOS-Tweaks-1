@@ -52,7 +52,7 @@
                     alertWindow.hidden = YES;
                 }];
 
-                [alert showSuccess:@"YouTube Music++" subTitle:@"Version: 1.0.3.1 \n Cracked By SarahH12099" closeButtonTitle:nil duration:0.0f];
+                [alert showSuccess:@"YouTube Music++" subTitle:@"Version: 1.0.3.2 \n Cracked By SarahH12099" closeButtonTitle:nil duration:0.0f];
 
                 [alertWindow makeKeyAndVisible];
                 [alertWindow.rootViewController presentViewController:alert animated:YES completion:nil];
@@ -297,5 +297,15 @@
 }
 - (BOOL)showBackgroundOnboardingHint {
     return 0;
+}
+%end
+
+%hook YTCarPlayController
+- (void)setPremiumSubscriber:(BOOL)arg1 {
+    arg1 = 1;
+    %orig;
+}
+- (BOOL)isPremiumSubscriber {
+    return 1;
 }
 %end
