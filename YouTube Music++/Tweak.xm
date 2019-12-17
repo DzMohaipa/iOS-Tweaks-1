@@ -296,6 +296,6 @@
 	return 0;
 }
 - (BOOL)showBackgroundOnboardingHint {
-	return 0;
+    return 0;
 }
 %end
