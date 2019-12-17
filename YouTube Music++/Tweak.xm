@@ -63,20 +63,20 @@
 		}
 		else {
 			UIWindow *alertWindow = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-            alertWindow.rootViewController = [[UIViewController alloc] init];
+			alertWindow.rootViewController = [[UIViewController alloc] init];
             alertWindow.windowLevel = UIWindowLevelAlert + 1;
 
-    		SCLAlertView *alert = [[SCLAlertView alloc] init];
+			SCLAlertView *alert = [[SCLAlertView alloc] init];
 
-            alert.customViewColor = [UIColor colorWithRed:0.97 green:0.53 blue:0.73 alpha:1.0];
+			alert.customViewColor = [UIColor colorWithRed:0.97 green:0.53 blue:0.73 alpha:1.0];
 
-            [alert addButton: @"Visit Official Repo" actionBlock: ^(void) {
-                [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://sarahh12099.github.io/repo/"]];
-                UIApplication *app = [UIApplication sharedApplication];
-            	[app performSelector:@selector(suspend)];
-            	[NSThread sleepForTimeInterval:2.0];
-            	exit(0);
-            }];
+			[alert addButton: @"Visit Official Repo" actionBlock: ^(void) {
+				[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://sarahh12099.github.io/repo/"]];
+				UIApplication *app = [UIApplication sharedApplication];
+				[app performSelector:@selector(suspend)];
+				[NSThread sleepForTimeInterval:2.0];
+				exit(0);
+			}];
 
             [alert addButton: @"Close App" actionBlock: ^(void) {
             	UIApplication *app = [UIApplication sharedApplication];
