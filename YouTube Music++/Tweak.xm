@@ -293,7 +293,7 @@
 
 %hook YTPlayerPromoController
 - (BOOL)showBackgroundabilityUpsell {
-	return 0;
+    return 0;
 }
 - (BOOL)showBackgroundOnboardingHint {
     return 0;
