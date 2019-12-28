@@ -1,7 +1,7 @@
 %hook ClassOne
 - (void)validatePurchasesInternally {
 }
-- (bool)hasValidSubscription {
+- (BOOL)hasValidSubscription {
     return 1;
 }
 %end

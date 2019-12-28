@@ -1,37 +1,37 @@
 %hook Survey
-- (bool)isPremium {
+- (BOOL)isPremium {
     return 1;
 }
 %end
 
 %hook ClassOne
-- (bool)isPremiumAvailable {
+- (BOOL)isPremiumAvailable {
     return 1;
 }
-- (void)setIsPremiumAvailable:(bool)arg1 {
+- (void)setIsPremiumAvailable:(BOOL)arg1 {
     arg1 = 1;
     %orig;
 }
-- (bool)isPremiumActive {
+- (BOOL)isPremiumActive {
     return 1;
 }
-- (void)setIsPremiumActive:(bool)arg1 {
+- (void)setIsPremiumActive:(BOOL)arg1 {
     arg1 = 1;
     %orig;
 }
-- (bool)isPremiumFeaturesAvailable {
+- (BOOL)isPremiumFeaturesAvailable {
     return 1;
 }
 %end
 
 %hook ClassTwo
-- (bool)isPremiumAvailable {
+- (BOOL)isPremiumAvailable {
     return 1;
 }
-- (bool)isPremiumActive {
+- (BOOL)isPremiumActive {
     return 1;
 }
-- (bool)isPremiumFeaturesAvailable {
+- (BOOL)isPremiumFeaturesAvailable {
     return 1;
 }
 %end

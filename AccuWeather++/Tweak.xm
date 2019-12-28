@@ -1,21 +1,21 @@
 %hook AWInAppPurchaseController
-- (bool)isPlatinumUnlocked {
+- (BOOL)isPlatinumUnlocked {
     return 1;
 }
-- (bool)isAppVersionPlatinum {
+- (BOOL)isAppVersionPlatinum {
     return 1;
 }
-- (bool)is25DayForecastEnabled {
+- (BOOL)is25DayForecastEnabled {
     return 1;
 }
-- (bool)isPlatinumEnabled {
+- (BOOL)isPlatinumEnabled {
     return 1;
 }
-- (void)setPlatinumUnlocked:(bool)arg1 {
+- (void)setPlatinumUnlocked:(BOOL)arg1 {
     arg1 = 1;
     %orig;
 }
-- (void)setIs25DayForecastEnabled:(bool)arg1 {
+- (void)setIs25DayForecastEnabled:(BOOL)arg1 {
     arg1 = 1;
     %orig;
 }

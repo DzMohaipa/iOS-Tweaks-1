@@ -1,5 +1,5 @@
 %hook ATMe
-- (bool)isSubscribed {
+- (BOOL)isSubscribed {
     return 1;
 }
 %end

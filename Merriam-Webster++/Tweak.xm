@@ -3,24 +3,24 @@
 }
 - (void)showRemoveAdsNagWithProduct:(id)arg1 {
 }
-- (bool)isProductUpgraded {
+- (BOOL)isProductUpgraded {
     return 1;
 }
 - (void)setMustValidateReceipts {
 }
-- (bool)supportsThesaurus {
+- (BOOL)supportsThesaurus {
     return 1;
 }
-- (bool)adShouldBeVisible {
+- (BOOL)adShouldBeVisible {
     return 0;
 }
-- (bool)canShowInterstitial {
+- (BOOL)canShowInterstitial {
     return 0;
 }
-- (bool)interstitialAdsEnabled {
+- (BOOL)interstitialAdsEnabled {
     return 0;
 }
-- (bool)adsEnabled {
+- (BOOL)adsEnabled {
     return 0;
 }
 - (void)showNags {

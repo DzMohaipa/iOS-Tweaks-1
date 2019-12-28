@@ -1,5 +1,5 @@
 %hook GADAdSource
-- (bool)invalidated {
+- (BOOL)invalidated {
     return 1;
 }
 %end

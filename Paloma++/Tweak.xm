@@ -1,20 +1,20 @@
 %hook APNSubscription
-- (bool)isActive {
+- (BOOL)isActive {
     return 1;
 }
 %end
 
 %hook APNSubscriptionsManager
-- (bool)hasActiveSubscription {
+- (BOOL)hasActiveSubscription {
     return 1;
 }
-- (bool)isActiveSubscriptionInFreeTrialPeriod {
+- (BOOL)isActiveSubscriptionInFreeTrialPeriod {
     return 0;
 }
-- (bool)isFreeTrial {
+- (BOOL)isFreeTrial {
     return 0;
 }
-- (void)setIsFreeTrial:(bool)arg1 {
+- (void)setIsFreeTrial:(BOOL)arg1 {
     arg1 = 0;
     %orig;
 }

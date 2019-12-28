@@ -1,8 +1,8 @@
 %hook PCVPNLocation
-- (bool)isPremium {
+- (BOOL)isPremium {
     return 1;
 }
-- (void)setPremium:(bool)arg1 {
+- (void)setPremium:(BOOL)arg1 {
     arg1 = 1;
     %orig;
 }
@@ -17,23 +17,23 @@
     double final = [date timeIntervalSince1970];
     return final;
 }
-- (bool)isPremium {
+- (BOOL)isPremium {
     return 1;
 }
 %end
 
 %hook PCLocationsViewController
-- (bool)isPremium {
+- (BOOL)isPremium {
     return 1;
 }
-- (void)setPremium:(bool)arg1 {
+- (void)setPremium:(BOOL)arg1 {
     arg1 = 1;
     %orig;
 }
 %end
 
 %hook PCLocationTableViewCell
-- (void)updateWithLocation:(id)arg1 premium:(bool)arg2 {
+- (void)updateWithLocation:(id)arg1 premium:(BOOL)arg2 {
     arg2 = 1;
     %orig;
 }

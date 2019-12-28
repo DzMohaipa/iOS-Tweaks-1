@@ -1,64 +1,64 @@
 %hook User
-- (bool)isPremium {
+- (BOOL)isPremium {
     return 1;
 }
 %end
 
 %hook DailyArticle
-- (bool)isPremiumChargedArticle {
+- (BOOL)isPremiumChargedArticle {
     return 0;
 }
 %end
 
 %hook ForumTopic
-- (bool)isPremiumOnly {
+- (BOOL)isPremiumOnly {
     return 0;
 }
 %end
 
 %hook ForumUser
-- (bool)isPremium {
+- (BOOL)isPremium {
     return 1;
 }
-- (void)setIsPremium:(bool)arg1 {
+- (void)setIsPremium:(BOOL)arg1 {
     arg1 = 1;
     %orig;
 }
 %end
 
 %hook GLChatRequestViewController
-- (bool)isPremium {
+- (BOOL)isPremium {
     return 1;
 }
-- (void)setIsPremium:(bool)arg1 {
+- (void)setIsPremium:(BOOL)arg1 {
     arg1 = 1;
     %orig;
 }
 %end
 
 %hook GLSKUserPlanStatus
-- (bool)isActive {
+- (BOOL)isActive {
     return 1;
 }
-- (bool)isRenewable {
+- (BOOL)isRenewable {
     return 0;
 }
-- (bool)user:(int)arg1 hasActivePlan:(id)arg2 {
+- (BOOL)user:(int)arg1 hasActivePlan:(id)arg2 {
     return 1;
 }
-- (bool)isPremiumUser:(int)arg1 {
+- (BOOL)isPremiumUser:(int)arg1 {
     return 1;
 }
-- (bool)isCurrentUserPremium {
+- (BOOL)isCurrentUserPremium {
     return 1;
 }
 %end
 
 %hook LXUser
-- (bool)isPremium {
+- (BOOL)isPremium {
     return 1;
 }
-- (bool)isPremiumOrBoughtAlc:(id)arg1 {
+- (BOOL)isPremiumOrBoughtAlc:(id)arg1 {
     return 1;
 }
 %end

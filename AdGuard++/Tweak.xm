@@ -1,14 +1,14 @@
 %hook ClassOne
-- (bool)proStatus {
+- (BOOL)proStatus {
     return 1;
 }
-- (bool)purchasedThroughLogin {
+- (BOOL)purchasedThroughLogin {
     return 1;
 }
 %end
 
 %hook ClassTwo
-- (bool)isProPurchasedInternal {
+- (BOOL)isProPurchasedInternal {
     return 1;
 }
 %end

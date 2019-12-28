@@ -1,5 +1,5 @@
 %hook PMPlexIAPManager
-- (bool)hasBeenPurchasedUnlockLimitedPlayback {
+- (BOOL)hasBeenPurchasedUnlockLimitedPlayback {
     return 1;
 }
 %end

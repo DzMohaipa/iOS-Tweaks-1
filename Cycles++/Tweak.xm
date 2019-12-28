@@ -1,11 +1,11 @@
 %hook ClassOne
-- (bool)hasFeature:(int64_t)arg1 {
+- (BOOL)hasFeature:(int64_t)arg1 {
     return 1;
 }
-- (bool)isPremiumMember {
+- (BOOL)isPremiumMember {
     return 1;
 }
-- (bool)isProUser {
+- (BOOL)isProUser {
     return 1;
 }
 %end

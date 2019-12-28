@@ -10,7 +10,7 @@
 %end
 
 %hook Util
-- (bool)isLimitTrackingAds {
+- (BOOL)isLimitTrackingAds {
     return 0;
 }
 %end

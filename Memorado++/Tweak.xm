@@ -1,59 +1,59 @@
 %hook DebugPremiumValidatorPreferences
-- (bool)isPremium {
+- (BOOL)isPremium {
     return 1;
 }
-- (void)setIsPremium:(bool)arg1 {
+- (void)setIsPremium:(BOOL)arg1 {
     arg1 = 1;
     %orig;
 }
 %end
 
 %hook WorkoutCalendarCell
-- (void)configureForHomeWithWorkoutResults:(id)arg1 andDate:(id)arg2 userIsPremium:(bool)arg3 {
+- (void)configureForHomeWithWorkoutResults:(id)arg1 andDate:(id)arg2 userIsPremium:(BOOL)arg3 {
     arg3 = 1;
     %orig;
 }
-- (void)configureWithWorkoutResults:(id)arg1 andDate:(id)arg2 userIsPremium:(bool)arg3 {
+- (void)configureWithWorkoutResults:(id)arg1 andDate:(id)arg2 userIsPremium:(BOOL)arg3 {
     arg3 = 1;
     %orig;
 }
-- (void)setIconWithWorkoutResults:(id)arg1 assetPrefix:(id)arg2 andDate:(id)arg3 userIsPremium:(bool)arg4 {
+- (void)setIconWithWorkoutResults:(id)arg1 assetPrefix:(id)arg2 andDate:(id)arg3 userIsPremium:(BOOL)arg4 {
     arg4 = 1;
     %orig;
 }
 %end
 
 %hook PremiumTypeChecker
-+ (bool)isPremiumForPremiumType:(int)arg1 {
++ (BOOL)isPremiumForPremiumType:(int)arg1 {
     return 1;
 }
 %end
 
 %hook PremiumStatusService
-- (bool)isPremiumForType:(int)arg1 {
+- (BOOL)isPremiumForType:(int)arg1 {
     return 1;
 }
-- (bool)premium {
+- (BOOL)premium {
     return 1;
 }
-- (void)setPremium:(bool)arg1 {
+- (void)setPremium:(BOOL)arg1 {
     arg1 = 1;
     %orig;
 }
 %end
 
 %hook GamesService
-- (id)gameSessionForSceneName:(id)arg1 andIsPremium:(bool)arg2 {
+- (id)gameSessionForSceneName:(id)arg1 andIsPremium:(BOOL)arg2 {
     arg2 = 1;
     return %orig;
 }
 %end
 
 %hook RelaxTipData
-- (bool)isPremium {
+- (BOOL)isPremium {
     return 1;
 }
-- (void)setIsPremium:(bool)arg1 {
+- (void)setIsPremium:(BOOL)arg1 {
     arg1 = 1;
     %orig;
 }

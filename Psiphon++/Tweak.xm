@@ -1,61 +1,61 @@
 %hook IAPStoreHelper
-+ (bool)hasActiveSubscriptionForNowOnBlock:(id)arg1 {
++ (BOOL)hasActiveSubscriptionForNowOnBlock:(id)arg1 {
     return 1;
 }
-+ (bool)hasActiveSubscriptionForNow {
++ (BOOL)hasActiveSubscriptionForNow {
     return 1;
 }
-+ (bool)hasActiveSubscriptionForDate:(id)arg1 {
++ (BOOL)hasActiveSubscriptionForDate:(id)arg1 {
     return 1;
 }
-+ (bool)hasActiveSubscriptionForDate:(id)arg1 getExpiryDate:(id *)arg2 {
++ (BOOL)hasActiveSubscriptionForDate:(id)arg1 getExpiryDate:(id *)arg2 {
     return 1;
 }
-+ (bool)hasActiveSubscriptionForDate:(id)arg1 inDict:(id)arg2 getExpiryDate:(id *)arg3 {
++ (BOOL)hasActiveSubscriptionForDate:(id)arg1 inDict:(id)arg2 getExpiryDate:(id *)arg3 {
     return 1;
 }
 %end
 
 %hook SettingsViewController
-- (bool)hasActiveSubscription {
+- (BOOL)hasActiveSubscription {
     return 1;
 }
-- (void)setHasActiveSubscription:(bool)arg1 {
+- (void)setHasActiveSubscription:(BOOL)arg1 {
     arg1 = 1;
     %orig;
 }
 %end
 
 %hook IAPViewController
-- (bool)hasActiveSubscription {
+- (BOOL)hasActiveSubscription {
     return 1;
 }
-- (void)setHasActiveSubscription:(bool)arg1 {
+- (void)setHasActiveSubscription:(BOOL)arg1 {
     arg1 = 1;
     %orig;
 }
 %end
 
 %hook SubscriptionData
-- (bool)hasActiveSubscriptionForNow {
+- (BOOL)hasActiveSubscriptionForNow {
     return 1;
 }
-- (bool)hasActiveAuthorizationForDate:(id)arg1 {
+- (BOOL)hasActiveAuthorizationForDate:(id)arg1 {
     return 1;
 }
 %end
 
 %hook PsiCashClientModel
-- (bool)hasActiveSpeedBoostPurchase {
+- (BOOL)hasActiveSpeedBoostPurchase {
     return 1;
 }
 %end
 
 %hook InnerMeterView
-- (bool)speedBoosting {
+- (BOOL)speedBoosting {
     return 1;
 }
-- (void)setSpeedBoosting:(bool)arg1 {
+- (void)setSpeedBoosting:(BOOL)arg1 {
     arg1 = 1;
     %orig;
 }
