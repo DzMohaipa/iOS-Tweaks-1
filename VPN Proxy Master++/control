@@ -1,9 +1,0 @@
-Package: net.hollr2099.vpnproxymasterpp
-Name: VPN Proxy Master++
-Depends: mobilesubstrate, firmware (>= 10.0)
-Version: 1.0.1.5
-Architecture: iphoneos-arm
-Description: Free Premium VPN Proxy Master
-Maintainer: SarahH12099
-Author: SarahH12099
-Section: Tweaks

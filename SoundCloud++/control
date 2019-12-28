@@ -1,9 +1,0 @@
-Package: net.hollr2099.soundcloudpp
-Name: SoundCloud++
-Depends: mobilesubstrate, firmware (>= 10.0)
-Version: 1.0.0.2
-Architecture: iphoneos-arm
-Description: No ads, high quality enabled, dev mode enabled.
-Maintainer: SarahH12099
-Author: SarahH12099
-Section: Tweaks

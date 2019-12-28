@@ -1,9 +1,0 @@
-Package: net.hollr2099.youtubemusicpp
-Name: YouTube Music++
-Depends: mobilesubstrate, firmware (>= 10.0)
-Version: 1.0.3.3
-Architecture: iphoneos-arm
-Description: No ads, background playback, double tap to skip, audio only mode buttons, carplay support, no get premium banner in account settings, no age check, no content check, no upsell notifications, no upsell popups on YouTube Music
-Maintainer: SarahH12099
-Author: SarahH12099
-Section: Tweaks
