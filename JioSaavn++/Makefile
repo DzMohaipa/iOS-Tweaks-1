@@ -1,8 +1,7 @@
 include $(THEOS)/makefiles/common.mk
 
 TWEAK_NAME = JioSaavnCrack
-JioSaavnCrack_FILES = Tweak.xm SCLAlertView/SCLAlertView.m SCLAlertView/SCLAlertViewResponder.m SCLAlertView/SCLAlertViewStyleKit.m SCLAlertView/SCLButton.m SCLAlertView/SCLSwitchView.m SCLAlertView/SCLTextView.m SCLAlertView/SCLTimerDisplay.m SCLAlertView/UIImage+ImageEffects.m
-JioSaavnCrack_FRAMEWORKS = UIKit Foundation
+JioSaavnCrack_FILES = Tweak.xm
 ARCHS = arm64
 CFLAGS = -fobjc-arc
 
