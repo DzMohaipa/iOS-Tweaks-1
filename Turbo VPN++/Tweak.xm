@@ -1,67 +1,67 @@
 %hook FlurryUtil
-+ (bool)deviceIsJailbroken {
++ (BOOL)deviceIsJailbroken {
     return 0;
 }
-+ (bool)appIsCracked {
++ (BOOL)appIsCracked {
     return 0;
 }
 %end
 
 %hook AppsFlyerUtils
-+ (bool)isJailbroken {
++ (BOOL)isJailbroken {
     return 0;
 }
 %end
 
 %hook ANSMetadata
-- (bool)computeIsJailbroken {
+- (BOOL)computeIsJailbroken {
     return 0;
 }
-- (bool)isJailbroken {
+- (BOOL)isJailbroken {
     return 0;
 }
 %end
 
 %hook DUUrlRequestFilterManager
-+ (bool)isJailBreak {
++ (BOOL)isJailBreak {
     return 0;
 }
-+ (bool)isJailBreak1 {
++ (BOOL)isJailBreak1 {
     return 0;
 }
-+ (bool)isJailBreak2 {
++ (BOOL)isJailBreak2 {
     return 0;
 }
-+ (bool)isJailBreak3 {
++ (BOOL)isJailBreak3 {
     return 0;
 }
-+ (bool)isJailBreak4 {
++ (BOOL)isJailBreak4 {
     return 0;
 }
 %end
 
 %hook ACPrivateBrowserController
-- (void)transitionInWithVPNConnected:(bool)arg1 serverIcon:(id)arg2 isVIP:(bool)arg3 {
+- (void)transitionInWithVPNConnected:(BOOL)arg1 serverIcon:(id)arg2 isVIP:(BOOL)arg3 {
     arg3 = 1;
     %orig;
 }
 %end
 
 %hook ACStatisticTool
-+ (void)setUserID:(id)arg1 isVIP:(bool)arg2 {
++ (void)setUserID:(id)arg1 isVIP:(BOOL)arg2 {
     arg2 = 1;
     %orig;
 }
 %end
 
 %hook ACUserVIPInfo
-- (bool)isVIP {
+- (BOOL)isVIP {
     return 1;
 }
-- (bool)isAutoRenew {
+- (BOOL)isAutoRenew {
     return 0;
 }
-- (void)setIsAutoRenew:(bool)arg1 {
+- (void)setIsAutoRenew:(BOOL)arg1 {
     arg1 = 0;
     %orig;
 }
@@ -83,40 +83,40 @@
 %end
 
 %hook ACUser
-- (bool)isVIP {
+- (BOOL)isVIP {
     return 1;
 }
 %end
 
 %hook ACUserStatisticTool
-+ (void)setUserID:(id)arg1 isVIP:(bool)arg2 {
++ (void)setUserID:(id)arg1 isVIP:(BOOL)arg2 {
     arg2 = 1;
     %orig;
 }
 %end
 
 %hook ACVPNServerArea
-- (bool)isVIP {
+- (BOOL)isVIP {
     return 1;
 }
-- (void)setIsVIP:(bool)arg1 {
+- (void)setIsVIP:(BOOL)arg1 {
     arg1 = 1;
     %orig;
 }
 %end
 
 %hook APMInAppPurchaseItem
-- (bool)isFreeTrial {
+- (BOOL)isFreeTrial {
     return 0;
 }
-- (void)setFreeTrial:(bool)arg1 {
+- (void)setFreeTrial:(BOOL)arg1 {
     arg1 = 0;
     %orig;
 }
-- (bool)isIntroductoryOffer {
+- (BOOL)isIntroductoryOffer {
     return 0;
 }
-- (void)setIntroductoryOffer:(bool)arg1 {
+- (void)setIntroductoryOffer:(BOOL)arg1 {
     arg1 = 0;
     %orig;
 }
@@ -128,28 +128,28 @@
 %end
 
 %hook RMAppReceipt
-- (bool)containsInAppPurchaseOfProductIdentifier:(id)arg1 {
+- (BOOL)containsInAppPurchaseOfProductIdentifier:(id)arg1 {
     return 1;
 }
-- (bool)containsActiveAutoRenewableSubscriptionOfProductIdentifier:(id)arg1 forDate:(id)arg2 {
+- (BOOL)containsActiveAutoRenewableSubscriptionOfProductIdentifier:(id)arg1 forDate:(id)arg2 {
     return 0;
 }
 %end
 
 %hook RMAppReceiptIAP
-- (bool)isActiveAutoRenewableSubscriptionForDate:(id)arg1 {
+- (BOOL)isActiveAutoRenewableSubscriptionForDate:(id)arg1 {
     return 0;
 }
 %end
 
 %hook RMStoreUtils
-+ (bool)isExpiredProductOfIdentifier:(id)arg1 {
++ (BOOL)isExpiredProductOfIdentifier:(id)arg1 {
     return 0;
 }
-+ (bool)isExistActivedAutoRenewableSubscriptionForDate:(id)arg1 {
++ (BOOL)isExistActivedAutoRenewableSubscriptionForDate:(id)arg1 {
     return 0;
 }
-+ (bool)isExistActivedAutoRenewableSubscription {
++ (BOOL)isExistActivedAutoRenewableSubscription {
     return 0;
 }
 %end
